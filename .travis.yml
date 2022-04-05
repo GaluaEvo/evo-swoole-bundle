@@ -1,0 +1,55 @@
+dist: bionic
+language: php
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - $HOME/pecl_cache
+
+env:
+  global:
+    - COMPOSER_ARGS=install
+    - SWOOLE_VERSION=4.5.11
+
+matrix:
+  include:
+    - php: "7.4"
+    - php: "8.0"
+      env:
+        - PHP_CS_FIXER_IGNORE_ENV=1
+    - php: "8.0"
+      env:
+        - SWOOLE_LATEST=1
+        - COMPOSER_ARGS='update --ignore-platform-reqs'
+  fast_finish: true
+  allow_failures:
+    - php: "8.0"
+      env:
+        - SWOOLE_LATEST=1
+        - COMPOSER_ARGS='update --ignore-platform-reqs'
+
+before_script:
+  - phpenv config-rm xdebug.ini
+
+before_install:
+  - export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+  - composer global require phwoolcon/ci-pecl-cacher
+  - pecl update-channels
+  - ci-pecl-install inotify
+  - >-
+      if [[ "$SWOOLE_LATEST" = "1" ]]; then
+        ci-pecl-install swoole;
+      else
+        ci-pecl-install swoole-$SWOOLE_VERSION swoole skip-update;
+      fi
+  - php -r "echo swoole_version().PHP_EOL;"
+
+install:
+  - export COMPOSER_ARGS="$COMPOSER_ARGS --prefer-dist --no-progress --no-suggest --ansi"
+  - echo "composer $COMPOSER_ARGS"
+  - composer $COMPOSER_ARGS
+
+script:
+  - composer analyse
+  - composer unit-tests
+  - composer feature-tests
