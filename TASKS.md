@@ -7,31 +7,31 @@ Last merge  [Wed Feb 16 09:12:35]
 - [X] HHSDT-311
 - [X] HHSDT-292
 - [X] HHSDT-277
-- [ ] HHSDT-272
+- [X] HHSDT-272 Wu
 - [X] HHSDT-264
-- [ ] HHSDT-249
+- [ ] HHSDT-249 ?
 - [X] HHSDT-242
-- [ ] HHSDT-232
-- [ ] HHSDT-225
+- [ ] HHSDT-232 не актуальна
+- [X] HHSDT-225 Wu
 - [X] HHSDT-221
-- [ ] HHSDT-214
-- [X] HHSDT-207
-- [ ] HHSDT-201
+- [ ] HHSDT-214 ?
+- [X] HHSDT-207 
+- [ ] HHSDT-201 ?
 - [X] HHSDT-199
 - [X] HHSDT-197
-- [ ] HHSDT-186
+- [X] HHSDT-186 Wu
 - [X] HHSDT-185
 - [X] HHSDT-184
 - [X] HHSDT-181
 - [X] HHSDT-116
 - [X] HHSDT-115
 - [X] HHSDT-114
-- [ ] HHSDT-113
-- [ ] HHSDT-84
+- [X] HHSDT-113 Wu
+- [X] HHSDT-84 Wu
 - [X] HHSDT-82
-- [ ] HHSDT-76
-- [ ] HHSDT-70
+- [ ] HHSDT-76 Не актуальна
+- [ ] HHSDT-70 Не актуальна
 - [X] HHSDT-56
-- [ ] HHSDT-23
-- [ ] HHSDT-8
-- [ ] HHSDT-1  
+- [ ] HHSDT-23 ?
+- [ ] HHSDT-8  ?
+- [ ] HHSDT-1  ? 
