@@ -9,7 +9,7 @@ Last merge  [Wed Feb 16 09:12:35]
 - [X] HHSDT-277
 - [X] HHSDT-272 Wu
 - [X] HHSDT-264
-- [ ] HHSDT-249 ?
+- [ ] HHSDT-249 ? Up NodeJS 16.13.0
 - [X] HHSDT-242
 - [ ] HHSDT-232 не актуальна
 - [X] HHSDT-225 Wu
