@@ -140,6 +140,17 @@ $ bin/console swoole:bridge:server
 
 
 ### Summary
+#### Console command
+```shell
+ swoole
+  swoole:bridge:server        Start swoole server
+  swoole:server:profile       Handle specified amount of requests to Swoole HTTP server. Useful for profiling.
+  swoole:server:reload        Reload Swoole HTTP server's workers running in the background. It will reload only classes not loaded before server initialization.
+  swoole:server:run           Run Swoole HTTP server.
+  swoole:server:start         Run Swoole HTTP server in the background.
+  swoole:server:status        Get current status of the Swoole HTTP Server by querying running API Server.
+  swoole:server:stop          Stop Swoole HTTP server running in the background.
+```
 
 #### Repositories composer.json
 ```json
